@@ -1,0 +1,13 @@
+install:
+  - apt install update
+
+
+script:
+  - ./autogen.sh
+  - ./configure --prefix=$HOME/local
+  - make
+  - make check
+  - make install
+
+after_success:
+- $HOME/local/bin/crfsuite -h
