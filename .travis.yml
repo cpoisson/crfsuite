@@ -1,5 +1,6 @@
 install:
   - sudo apt update
+  - sudo apt install liblbfgs-dev
 
 script:
   - ./autogen.sh
