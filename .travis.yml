@@ -1,6 +1,5 @@
 install:
-  - apt install update
-
+  - sudo apt update
 
 script:
   - ./autogen.sh
